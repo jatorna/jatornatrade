@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export PYTHONPATH=.
+python3 trading_engine/main_trading_engine.py testing_and_validation/configs/backtest_test.ini backtest output_backtest
+python3 trading_engine/main_trading_engine.py testing_and_validation/configs/backtest_test_screener.ini backtest_screener output_backtest_screener
+python3 post_processor/main_post_processor.py -i output_backtest
+python3 testing_and_validation/test_pr.py
+rm -rf output_backtest output_backtest_screener
