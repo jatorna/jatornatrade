@@ -1,2 +1,2 @@
 # jatornatrade
-A trading engine built in Python
+An algorithmic trading engine built in Python
