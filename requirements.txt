@@ -1,4 +1,4 @@
-requests==2.26.0
+requests==2.31.0
 selenium==3.141.0
 alpha_vantage==2.2.0
 beautifulsoup4==4.9.3
